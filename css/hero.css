@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+header{
+	background-color: darkred;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	color: white;
+	font-size: 15px;
+}
+
+
+header img{
+	border-radius: 150px;
+	width: 300px;
+	border: 14px solid antiquewhite;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px 20px;
+}
+
+main img{
+	max-width: 100%;
+}
+
+h2{
+	font-size: 35px;
+	color: darkred;
+	margin: 10px 0 10 px;
+}
+
+a{
+	color: darkred;
+}
+a:hover{
+	opacity: .5;
+	background-color: transparent;
+}
+
+footer{
+	background-color: darkred;
+	text-align: center;
+	padding:50px;
+	color: white;
+	font-size: 15px;
+
+}
+
+footer p{
+	margin: 0;
+}
+
+p.caption{
+	color: darkgrey;
+	font-style: italic;
+	margin-top: 0;
+}
