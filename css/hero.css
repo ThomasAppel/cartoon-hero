@@ -3,6 +3,7 @@ body{
 	font-family: sans-serif;
 	font-size: 20px;
 	line-height: 30px;
+	background-color: lightgrey;
 }
 header{
 	background-color: darkred;
@@ -12,7 +13,6 @@ header{
 	color: white;
 	font-size: 15px;
 }
-
 
 header img{
 	border-radius: 150px;
@@ -47,10 +47,11 @@ a:hover{
 footer{
 	background-color: darkred;
 	text-align: center;
-	padding:50px;
+	padding:0 2%;
 	color: white;
 	font-size: 15px;
-
+	width: 96%;
+	clear: both;
 }
 
 footer p{
@@ -61,4 +62,42 @@ p.caption{
 	color: darkgrey;
 	font-style: italic;
 	margin-top: 0;
+}
+
+.listitem{
+	display: inline-block;
+	padding: 1px 2% 1px 2%;
+}
+
+#navbar{
+	background-color: white;
+	border: 1px white solid;
+}
+
+#navbar ul li a{
+text-decoration: none;
+font-size: 1.2em;
+color: black;
+padding: 5px 1%;
+line-height: 5px;
+}
+
+#navbar ul li a:hover{
+	opacity: .5;
+	color: darkred;
+	background-color: transparent;
+    text-decoration: underline;
+}
+
+#menu{
+float: left;
+width: 21%;
+background-color: yellow;
+padding: 0 2%;
+}
+
+#maincontent{
+float: right;
+width: 71%;
+padding: 0 2%;
 }
