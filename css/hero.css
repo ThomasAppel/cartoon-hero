@@ -25,6 +25,7 @@ main {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px 20px;
+	float: center;
 }
 
 main img{
@@ -92,7 +93,6 @@ line-height: 5px;
 }
 
 #maincontent{
-float: center;
 width: 96%;
 padding: 0 2%;
 }
