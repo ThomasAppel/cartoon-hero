@@ -90,17 +90,10 @@ line-height: 5px;
     text-decoration: underline;
 }
 
-#menu{
-float: left;
-width: 21%;
-background-color: yellow;
-padding: 0 2%;	
-margin: 0;
-}
 
 #maincontent{
 float: right;
-width: 71%;
+width: 96%;
 padding: 0 2%;
 }
 
@@ -110,8 +103,6 @@ padding: 0 2%;
 }
 
 @media screen and (max-width: 768px){
-
-	#menu{display: none;	}
 	#maincontent{
 	width: 100%;
 	padding: 0 0%;
