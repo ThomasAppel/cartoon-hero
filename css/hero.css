@@ -5,6 +5,7 @@ body{
 	line-height: 30px;
 	background-color: lightgrey;
 }
+
 header{
 	background-color: darkred;
 	text-align: center;
@@ -91,7 +92,7 @@ line-height: 5px;
 }
 
 #maincontent{
-float: right;
+float: center;
 width: 96%;
 padding: 0 2%;
 }
