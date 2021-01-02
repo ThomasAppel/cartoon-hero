@@ -72,6 +72,7 @@ p.caption{
 #navbar{
 	background-color: white;
 	border: 1px white solid;
+	text-align: center;
 }
 
 #navbar ul li a{
@@ -93,11 +94,27 @@ line-height: 5px;
 float: left;
 width: 21%;
 background-color: yellow;
-padding: 0 2%;
+padding: 0 2%;	
+margin: 0;
 }
 
 #maincontent{
 float: right;
 width: 71%;
 padding: 0 2%;
+}
+
+#container{
+	max-width: 96%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+
+	#menu{display: none;	}
+	#maincontent{
+	width: 100%;
+	padding: 0 0%;
+}
+
 }
