@@ -92,9 +92,8 @@ p.caption{
     text-decoration: underline;
 }
 
-#maincontent{
-	width: 96%;
-	padding: 0 2%;
+.links ul li a{
+	color: darkred;
 }
 
 #container{
@@ -195,28 +194,6 @@ a:not(.logo){
 	margin-left: 50px;
 }
 
-
-	.services_item text-center{
-		margin: 10px 0px;
-		padding: 20px 15px;
-		background: white;
-		border-radius: 200px;}
-		.service_icon{
-			width: 186px;
-			height: 145px;
-			margin: auto;
-			background-repeat: no-repeat;
-			display: flex;
-			justify-content: center;
-			align-items: center;}
-
-			i{
-				color: white;
-				font-size: 3em;
-				padding: 0px 0px 5px 12px;}
-
-
-
 .mobile-menu{
 	font-size: 1.6em;
 	
@@ -230,11 +207,6 @@ a:not(.logo){
 	background-repeat: no-repeat;
 }
 
-.wrapper{
-	display: grid;
-	align-content: center;
-	align-items: center;
-}
 
 .background-element{
 	position: absolute;
@@ -249,46 +221,41 @@ a:not(.logo){
 	color: blue;
 }
 
-.button.border--outline{
-	border: 2px solid pink;
-	border-radius: 50px;
-	padding: 4px 25px;
-	vertical-align: middle;
-	transition: all 0.5s ease;
-}
-hover
-
-.button.button-gradient{
-	border-radius: 50px;
-	text-decoration: none;
-	color: white;
-	background-image: linear-gradient(to right, blue 0%, pink 51%, blue 100%);
-	background-size: 200% auto;
-	padding: 8px 20px;
-	transition: 0.5s ease;
-}
-hover
-
-
-//// Section 2
-
-.service-list{}
 	.service_item{
 		margin: 10px 0px;
 		padding: 20px 15px;
 		background: rgba(255, 255, 255, 0.9);
 		border-radius: 8px;
 	}
-.service_icon{
-	width: 186px;
-	height: 145px;
-	margin: auto;
-	background-image: url(C:\Users\tnapp\Desktop\cartoon-hero\img\Tom and Jerry.jpeg);
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-size: 3em;
-	padding: 0px 0px 5px 12px;
-}
+	.service_icon{
+		width: 100px;
+		height: 80px;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.service_heading{
+		font-weight: bold;
+		font-size: 1.3em;
+		text-align: center;}
+
+	.service_text{
+		opacity: .7;
+		text-align: center;}
+
+
+@media only screen and (min-width: 768px){
+	.header{
+		position: absolute;
+		display: grid;
+		grid-template-columns: 1fr 2fr;}
+
+		.mobile-menu{
+			display: none;
+		}
+		.desktop-menu{
+			display: block;
+		}
+	}
+

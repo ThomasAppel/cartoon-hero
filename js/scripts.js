@@ -7,3 +7,4 @@ function closeNav() {
 	document.getElementByld("mySidenav").style.transform = "translateX(-250px)";
 	document.getElementByld("main").style.marginLeft = "0px";
 }
+
