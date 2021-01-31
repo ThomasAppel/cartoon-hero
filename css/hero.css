@@ -4,7 +4,7 @@ body{
 	font-size: 20px;
 	line-height: 30px;
 	background-color: lightgrey;
-}
+	}
 
 header{
 	background-color: darkred;
@@ -78,11 +78,11 @@ p.caption{
 }
 
 #navbar ul li a{
-text-decoration: none;
-font-size: 1.2em;
-color: black;
-padding: 5px 1%;
-line-height: 5px;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: black;
+	padding: 5px 1%;
+	line-height: 5px;
 }
 
 #navbar ul li a:hover{
@@ -93,8 +93,8 @@ line-height: 5px;
 }
 
 #maincontent{
-width: 96%;
-padding: 0 2%;
+	width: 96%;
+	padding: 0 2%;
 }
 
 #container{
@@ -103,13 +103,192 @@ padding: 0 2%;
 }
 
 @media screen and (max-width: 768px){
-	#maincontent{
+ 	#maincontent{
 	width: 100%;
 	padding: 0 0%;
 }
 }
 
+.mobile-nav{
+	height: 100%;
+	width: 250;
+	position: fixed;
+	transform: translateX(-250px);
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: yellow;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: transform 0.5s;
+}
 
+.main{
+	transition: margin-left .5s;}
+
+	.header{
+		position: absolute;
+		width: 100%;
+		padding: 30px;
+		color: black;
+		z-index: 10;}
+	.header-left{
+		display: flex;
+		align-items: center;
+	}
+	.header-right{
+		text-align: center:
+	}
+
+
+.logo{
+	width: 45px;
+	max-width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.desktop-menu{
+	display: none;
+	font-weight: bold;}
+
+	.listitem-header{
+		display: inline;
+		margin-right: 25px;	}
+	a{
+		color: black;
+		opacity: 7s;}
+	a:hover{
+		opacity 1;
+		transition: opacity .3 ease;
+		}
+
+
+.menu-logo{
+	margin: auto;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	width: 45px;
+	max-width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+a:not(.logo){
+	padding: 8px 8px 8px 0px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+
+	.services_item text-center{
+		margin: 10px 0px;
+		padding: 20px 15px;
+		background: white;
+		border-radius: 200px;}
+		.service_icon{
+			width: 186px;
+			height: 145px;
+			margin: auto;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+
+			i{
+				color: white;
+				font-size: 3em;
+				padding: 0px 0px 5px 12px;}
+
+
+
+.mobile-menu{
+	font-size: 1.6em;
+	
+}
+
+.section{
+	height: 100%;
+	width: 100%;
+	position:relative;
+	padding: 30px 0px;
+	background-repeat: no-repeat;
+}
+
+.wrapper{
+	display: grid;
+	align-content: center;
+	align-items: center;
+}
+
+.background-element{
+	position: absolute;
+	z-index: -1;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.colour{
+	color: blue;
+}
+
+.button.border--outline{
+	border: 2px solid pink;
+	border-radius: 50px;
+	padding: 4px 25px;
+	vertical-align: middle;
+	transition: all 0.5s ease;
+}
+hover
+
+.button.button-gradient{
+	border-radius: 50px;
+	text-decoration: none;
+	color: white;
+	background-image: linear-gradient(to right, blue 0%, pink 51%, blue 100%);
+	background-size: 200% auto;
+	padding: 8px 20px;
+	transition: 0.5s ease;
+}
+hover
+
+
+//// Section 2
+
+.service-list{}
+	.service_item{
+		margin: 10px 0px;
+		padding: 20px 15px;
+		background: rgba(255, 255, 255, 0.9);
+		border-radius: 8px;
+	}
 .service_icon{
-	width: 25px;
+	width: 186px;
+	height: 145px;
+	margin: auto;
+	background-image: url(C:\Users\tnapp\Desktop\cartoon-hero\img\Tom and Jerry.jpeg);
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 3em;
+	padding: 0px 0px 5px 12px;
 }

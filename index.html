@@ -5,8 +5,6 @@
 	<link rel="icon" href="img/T&J.jpeg">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/hero.css">
-	<link rel="stylesheet" type="text/css" href="css/regular/svgs">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -22,16 +20,46 @@
 	<li class="listitem"><a href="/Jerry">Jerry</a></li>
 	<li class="listitem"><a href="/Friends">Friends</a></li></ul>
 </nav>
+<div id="mySidenav" class="mobile-nav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<img src="img/home.svg" alt="logo" class="menu-logo">
+	<a href="#">Home</a>
+	<a href="#">Tom</a>
+	<a href="#">Jerry</a>
+	<a href="#">Friends</a>
+</div>
+
+
 <section id="maincontent">
 <!-- main element -->
-<body>
 
+<div id="main" class="main">
+	<div class="header">
+		<div class="header-left">
+			<span class="mobile-menu" onclick="openNav()"><img src="img/bars.svg"></span>
+				<img src="img/home.svg" alt="logo" class="menu-logo"><span>Creative Ibot</span>
+		</div>
+		<div class="header-right">
+			<ul class="desktop-menu">
+				<li class="listitem-header"><a href="#">Home</a></li>
+				<li class="listitem-header"><a href="#">Tom</a></li>
+				<li class="listitem-header"><a href="#">Jerry</a></li>
+				<li class="listitem-header"><a href="#">Friendssss</a></li>
+				<li class="listitem-header"><a href="button border--outline">contact</a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+<body>
 	<main>
 		<h2>About Tom and Jerry</h2>
 		<p>Tom and Jerry are my favorite cartoons from when I was a child.</p>
 		<img title="Tom and Jerry together" src="img/Tom.jpeg">
 		<p class="caption">Tom and Jerry together</p>
-<!-- Other photo-->
+
+<!-- Other photos-->
 <div class="services-list grid">
 	<div class="services_item text-center">
 	<div class="service_icon"><img src="img/wikipedia-w.svg"></div>
@@ -82,5 +110,4 @@
 	</footer>
 </body>
 </div>
-
 </html>
