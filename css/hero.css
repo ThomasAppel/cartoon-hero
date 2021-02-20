@@ -220,12 +220,21 @@ a:not(.logo){
 .colour{
 	color: blue;
 }
+.box{
+	width: 31%;
+	height: 240px;
+	padding: 20px 1px;
+	border: 5px solid black;
+	margin: 1px;
+	text-align: center;
+	display: inline-block;
+}
 
 	.service_item{
 		margin: 10px 0px;
 		padding: 20px 15px;
 		background: rgba(255, 255, 255, 0.9);
-		border-radius: 8px;
+		border-radius: 5px;
 	}
 	.service_icon{
 		width: 100px;
@@ -242,6 +251,7 @@ a:not(.logo){
 
 	.service_text{
 		opacity: .7;
+		text-align: center;
 		text-align: center;}
 
 
