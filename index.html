@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Tom and Jerry</title>
 	<link rel="icon" href="img/T&J.jpeg">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/hero.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <div id="containter">
@@ -14,21 +16,18 @@
 		<h1>Tom and Jerry</h1>
 	</header>
 <nav id="navbar">
-	<ul>
+	<ul class="nav-links">
 	<li class="listitem"><a href="/">Home</a></li>
 	<li class="listitem"><a href="/Tom">Tom</a></li>
 	<li class="listitem"><a href="/Jerry">Jerry</a></li>
 	<li class="listitem"><a href="/Friends">Friends</a></li></ul>
-</nav>
-<div id="mySidenav" class="mobile-nav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<img src="img/home.svg" alt="logo" class="menu-logo">
-	<span class="mobile-menu" onclick="openNav()"><img src="img/bars.svg"></span>
-	<a href="#">Home</a>
-	<a href="#">Tom</a>
-	<a href="#">Jerry</a>
-	<a href="#">Friends</a>
+	
+<div class="burger">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
 </div>
+</nav>
 
 <body>
 	<main>
@@ -68,6 +67,15 @@
 			<li>They are always fighting </li>
 			<li>They live in the same house</li>
 		</ol>
+<hr>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
 
 	<hr>
 <!-- friends -->
@@ -86,7 +94,10 @@
 	<footer>
 		<p>This site was created during free hours. &copy; Thomas </p>
 	</footer>
+
 </body>
 </div>
+<script src="app.js"></script>
+
 </html>
 

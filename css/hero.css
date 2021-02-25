@@ -41,6 +41,7 @@ h2{
 a{
 	color: darkred;
 }
+
 a:hover{
 	opacity: .5;
 	background-color: transparent;
@@ -60,6 +61,14 @@ footer p{
 	margin: 0;
 }
 
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: white;
+}
+
 p.caption{
 	color: darkgrey;
 	font-style: italic;
@@ -69,20 +78,23 @@ p.caption{
 .listitem{
 	display: inline-block;
 	padding: 1px 2% 1px 2%;
+	color: white;
 }
 
-#navbar{
-	background-color: white;
-	border: 1px white solid;
-	text-align: center;
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
 }
-
 #navbar ul li a{
 	text-decoration: none;
 	font-size: 1.2em;
 	color: black;
 	padding: 5px 1%;
 	line-height: 5px;
+	display: flex;
+	justify-content: space-around;
+	width: 35%;
 }
 
 #navbar ul li a:hover{
@@ -92,34 +104,24 @@ p.caption{
     text-decoration: underline;
 }
 
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: darkred;
+	margin: 5px;
+}
+
+.burger{
+	display: none;
+}
+
 .links ul li a{
-	color: darkred;
+	color: blue;
 }
 
 #container{
 	max-width: 96%;
 	margin: 0 auto;
-}
-
-@media screen and (max-width: 768px){
- 	#maincontent{
-	width: 100%;
-	padding: 0 0%;
-}
-}
-
-.mobile-nav{
-	height: 100%;
-	width: 250;
-	position: fixed;
-	transform: translateX(-250px);
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: yellow;
-	overflow-x: hidden;
-	padding-top: 60px;
-	transition: transform 0.5s;
 }
 
 .main{
@@ -139,18 +141,6 @@ p.caption{
 		text-align: center:
 	}
 
-
-.logo{
-	width: 45px;
-	max-width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.desktop-menu{
-	display: none;
-	font-weight: bold;}
-
 	.listitem-header{
 		display: inline;
 		margin-right: 25px;	}
@@ -161,51 +151,6 @@ p.caption{
 		opacity 1;
 		transition: opacity .3 ease;
 		}
-
-
-.menu-logo{
-	margin: auto;
-	text-decoration: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
-	width: 45px;
-	max-width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-a:not(.logo){
-	padding: 8px 8px 8px 0px;
-	text-decoration: none;
-	font-size: 25px;
-	color: white;
-	display: block;
-	text-align: center;
-	transition: 0.3s;
-}
-
-.closebtn{
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-}
-
-.mobile-menu{
-	font-size: 1.6em;
-	
-}
-
-.section{
-	height: 100%;
-	width: 100%;
-	position:relative;
-	padding: 30px 0px;
-	background-repeat: no-repeat;
-}
 
 
 .background-element{
@@ -254,18 +199,44 @@ a:not(.logo){
 		text-align: center;
 		text-align: center;}
 
+@media screen and (max-width: 1024px){
+ 	body{ overflow-x: hidden; }
+ 	.nav-links{
+ 		width: 60%;}
 
-@media only screen and (min-width: 768px){
-	.header{
-		position: absolute;
-		display: grid;
-		grid-template-columns: 1fr 2fr;}
+@media screen and (max-width: 1024px){
+ 	body{ overflow-x: hidden; }
+ 	.nav-links{
+ 		position: absolute;
+ 		right: 0px;
+ 		height: 90vh;
+ 		top: 64vh;
+ 		background-color: darkred;	
+		display: flex;
+ 		flex-direction: column;
+ 		align-items: center;
+ 		width: 90%;
+ 		transform: translateX(100%);
+ 		transition: transform 0.5s ease-in;
+ 	}
+ 	.nav-links li{
+ 		opacity: 5;
+  		 	}
 
-		.mobile-menu{
-			display: none;
-		}
-		.desktop-menu{
-			display: block;
-		}
+	.burger{
+		display: block;
 	}
 
+	.nav-active{
+	transform: translateX(0%);}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
